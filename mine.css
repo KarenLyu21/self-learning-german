@@ -3,8 +3,20 @@
     margin: auto;
 }
 
+li .s-pic, li .m-pic {
+    width: 80%
+}
+
+li .l-pic {
+    width: 100%;
+}
+
 .s-pic, .m-pic {
-    width: 90%;
+    max-width: 90%;
+}
+
+.l-pic {
+    width: inherit;
 }
 
 .l-pic {
@@ -20,29 +32,45 @@
 }
 
 .contact {
-    text-align: right;
-    line-height: 1.1;
-}
-
-.contact .contact-link {
-    margin-bottom: 0.3em;
-    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .contact p {
-    margin: 0.3em 0 0.3em 0;
+    margin: 0 0 0.3em 0;
 }
 
-.contact a {
+.contact a.text {
     text-decoration: none;
     font-size: 0.85em;
     font-weight: 700;
+    line-height: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+    .contact a.text br{
+        display: none;
+    }
+    .contact a.markie {
+        font-size: 0.85em;
+    }
+    p.contact {
+        margin: 0.1em 0;
+    }
+}
+
+.contact a.markie {
+    font-size: 1.2em;
+    padding: 0 0.5em;
+    transition: 0.5s ease-in-out
 }
 
 .contact a:hover {
-    border-bottom: 1px dotted;
+    color: rgb(65, 131, 196, 0.8)
 }
 
-.contact p {
+.note {
     font-style: italic;
+    font-size: 0.85em;
 }
