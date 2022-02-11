@@ -7,635 +7,164 @@
               href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
               integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
               crossorigin="anonymous" />
-<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
-.mac-os-11 { --title-bar-height: 28px; }
-html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
-iframe { margin: auto; }
-a.url { word-break: break-all; }
-a:active, a:hover { outline: 0px; }
-.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
-#write.first-line-indent p { text-indent: 2em; }
-#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
-#write.first-line-indent li { margin-left: 2em; }
-.for-image #write { padding-left: 8px; padding-right: 8px; }
-body.typora-export { padding-left: 30px; padding-right: 30px; }
-.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
-.typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
-  body.typora-export { padding-left: 0px; padding-right: 0px; }
-  #write { padding-left: 20px; padding-right: 20px; }
-  .CodeMirror-sizer { margin-left: 0px !important; }
-  .CodeMirror-gutters { display: none !important; }
-}
-#write li > figure:last-child { margin-bottom: 0.5rem; }
-#write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
-input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-*, ::after, ::before { box-sizing: border-box; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
-p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
-p { orphans: 4; }
-h1 { font-size: 2rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.6rem; }
-h4 { font-size: 1.4rem; }
-h5 { font-size: 1.2rem; }
-h6 { font-size: 1rem; }
-.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
-.hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
-a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
-sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
-figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px; }
-tr { break-inside: avoid; break-after: auto; }
-thead { display: table-header-group; }
-table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
-.CodeMirror-linenumber { }
-.CodeMirror { text-align: left; }
-.CodeMirror-placeholder { opacity: 0.3; }
-.CodeMirror pre { padding: 0px 4px; }
-.CodeMirror-lines { padding: 0px; }
-div.hr:focus { cursor: none; }
-#write pre { white-space: pre-wrap; }
-#write.fences-no-line-wrapping pre { white-space: pre; }
-#write pre.ty-contain-cm { white-space: normal; }
-.CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
-.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
-#write .md-fences.mock-cm { white-space: pre-wrap; }
-.md-fences.md-fences-with-lineno { padding-left: 0px; }
-#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
-.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
-.CodeMirror-line, twitterwidget { break-inside: avoid; }
-.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
-.footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
-li div { padding-top: 0px; }
-blockquote { margin: 1rem 0px; }
-li .mathjax-block, li p { margin: 0.5rem 0px; }
-li blockquote { margin: 1rem 0px; }
-li { margin: 0px; position: relative; }
-blockquote > :last-child { margin-bottom: 0px; }
-blockquote > :first-child, li > :first-child { margin-top: 0px; }
-.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
-#write .footnote-line { white-space: pre-wrap; }
-@media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
-  .typora-export #write { break-after: avoid; }
-  .typora-export #write::after { height: 0px; }
-  .is-mac table { break-inside: avoid; }
-  .typora-export-show-outline .typora-export-sidebar { display: none; }
-}
-.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
-a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
-p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
-#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
-p > .md-image:only-child { display: inline-block; width: 100%; }
-#write .MathJax_Display { margin: 0.8em 0px 0px; }
-.md-math-block { width: 100%; }
-.md-math-block:not(:empty)::after { display: none; }
-.MathJax_ref { fill: currentcolor; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
-.md-task-list-item { position: relative; list-style-type: none; }
-.task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
-.math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
-.md-toc-content { position: relative; margin-left: 0px; }
-.md-toc-content::after, .md-toc::after { display: none; }
-.md-toc-item { display: block; color: rgb(65, 131, 196); }
-.md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { text-decoration: underline; }
-.md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
-.md-toc-h2 .md-toc-inner { margin-left: 2em; }
-.md-toc-h3 .md-toc-inner { margin-left: 4em; }
-.md-toc-h4 .md-toc-inner { margin-left: 6em; }
-.md-toc-h5 .md-toc-inner { margin-left: 8em; }
-.md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
-  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
-  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
-  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
-  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
-}
-a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
-.footnote-line a:not(.reversefootnote) { color: inherit; }
-.md-attr { display: none; }
-.md-fn-count::after { content: "."; }
-code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
-code { text-align: left; }
-a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
-.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
-.md-diagram-panel > svg { max-width: 100%; }
-[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
-[lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; }
-video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: none; }
-.highlight td, .highlight tr { border: 0px; }
-mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
-.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-.md-expand mark .md-meta { opacity: 0.3 !important; }
-mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
-  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
-}
-.md-diagram-panel .messageText { stroke: none !important; }
-.md-diagram-panel .start-state { fill: var(--node-fill); }
-.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-fences.md-fences-math { font-size: 1em; }
-.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
-.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
-.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
-.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
-.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
-.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
-  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
-}
-@media screen and (max-width: 800px) { 
-  .typora-export-sidebar { display: none; }
-}
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
-.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
-.outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
-.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ''; }
-.outline-h1 > .outline-item { padding-left: 0px; }
-.outline-h2 > .outline-item { padding-left: 1em; }
-.outline-h3 > .outline-item { padding-left: 2em; }
-.outline-h4 > .outline-item { padding-left: 3em; }
-.outline-h5 > .outline-item { padding-left: 4em; }
-.outline-h6 > .outline-item { padding-left: 5em; }
-.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
-.outline-label:hover { text-decoration: underline; }
-.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
-.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
-.outline-children { display: none; }
-.info-panel-tab-wrapper { display: none; }
-.outline-item-open > .outline-children { display: block; }
-.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
-.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
-.typora-export-collapse-outline .outline-children { display: none; }
-.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
-.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
-.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
-.md-inline-math-container mjx-container { zoom: 0.95; }
-
-
-:root {
-    --side-bar-bg-color: #fafafa;
-    --control-text-color: #777;
-}
-
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-/* open-sans-regular - latin-ext_latin */
-  /* open-sans-italic - latin-ext_latin */
-    /* open-sans-700 - latin-ext_latin */
-    /* open-sans-700italic - latin-ext_latin */
-  html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-}
-
-body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
-}
-
-#write {
-    max-width: 860px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
-}
-
-@media only screen and (min-width: 1400px) {
-	#write {
-		max-width: 1024px;
-	}
-}
-
-@media only screen and (min-width: 1800px) {
-	#write {
-		max-width: 1200px;
-	}
-}
-
-#write > ul:first-child,
-#write > ol:first-child{
-    margin-top: 30px;
-}
-
-a {
-    color: #4183C4;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
-}
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    text-decoration: none;
-}
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
-h1 {
-    font-size: 2.25em;
-    line-height: 1.2;
-    border-bottom: 1px solid #eee;
-}
-h2 {
-    font-size: 1.75em;
-    line-height: 1.225;
-    border-bottom: 1px solid #eee;
-}
-
-/*@media print {
-    .typora-export h1,
-    .typora-export h2 {
-        border-bottom: none;
-        padding-bottom: initial;
-    }
-
-    .typora-export h1::after,
-    .typora-export h2::after {
-        content: "";
-        display: block;
-        height: 100px;
-        margin-top: -96px;
-        border-top: 1px solid #eee;
-    }
-}*/
-
-h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
-}
-h4 {
-    font-size: 1.25em;
-}
-h5 {
-    font-size: 1em;
-}
-h6 {
-   font-size: 1em;
-    color: #777;
-}
-p,
-blockquote,
-ul,
-ol,
-dl,
-table{
-    margin: 0.8em 0;
-}
-li>ol,
-li>ul {
-    margin: 0 0;
-}
-hr {
-    height: 2px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
-}
-
-li p.first {
-    display: inline-block;
-}
-ul,
-ol {
-    padding-left: 30px;
-}
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
-}
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
-}
-blockquote {
-    border-left: 4px solid #dfe2e5;
-    padding: 0 15px;
-    color: #777777;
-}
-blockquote blockquote {
-    padding-right: 0;
-}
-table {
-    padding: 0;
-    word-break: initial;
-}
-table tr {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 0;
-}
-table tr:nth-child(2n),
-thead {
-    background-color: #f8f8f8;
-}
-table th {
-    font-weight: bold;
-    border: 1px solid #dfe2e5;
-    border-bottom: 0;
-    margin: 0;
-    padding: 6px 13px;
-}
-table td {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 6px 13px;
-}
-table th:first-child,
-table td:first-child {
-    margin-top: 0;
-}
-table th:last-child,
-table td:last-child {
-    margin-bottom: 0;
-}
-
-.CodeMirror-lines {
-    padding-left: 4px;
-}
-
-.code-tooltip {
-    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
-    border-top: 1px solid #eef2f2;
-}
-
-.md-fences,
-code,
-tt {
-    border: 1px solid #e7eaed;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-}
-
-code {
-    background-color: #f3f4f4;
-    padding: 0 2px 0 2px;
-}
-
-.md-fences {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding-top: 8px;
-    padding-bottom: 6px;
-}
-
-
-.md-task-list-item > input {
-  margin-left: -1.3em;
-}
-
-@media print {
-    html {
-        font-size: 13px;
-    }
-    table,
-    pre {
-        page-break-inside: avoid;
-    }
-    pre {
-        word-wrap: break-word;
-    }
-}
-
-.md-fences {
-	background-color: #f8f8f8;
-}
-#write pre.md-meta-block {
-	padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
-}
-
-.mathjax-block>.code-tooltip {
-	bottom: .375rem;
-}
-
-.md-mathjax-midline {
-    background: #fafafa;
-}
-
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
-}
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-.md-image>.md-meta {
-    /*border: 1px solid #ddd;*/
-    border-radius: 3px;
-    padding: 2px 0px 0px 4px;
-    font-size: 0.9em;
-    color: inherit;
-}
-
-.md-tag {
-    color: #a7a7a7;
-    opacity: 1;
-}
-
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
-}
-
-.sidebar-tabs {
-    border-bottom: none;
-}
-
-#typora-quick-open {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-}
-
-#typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
-    border-style: solid;
-    border-width: 1px;
-}
-
-/** focus mode */
-.on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
-}
-
-header, .context-menu, .megamenu-content, footer{
-    font-family: "Segoe UI", "Arial", sans-serif;
-}
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
-    visibility: visible;
-}
-
-.mac-seamless-mode #typora-sidebar {
-    background-color: #fafafa;
-    background-color: var(--side-bar-bg-color);
-}
-
-.md-lang {
-    color: #b4654d;
-}
-
-/*.html-for-mac {
-    --item-hover-bg-color: #E6F0FE;
-}*/
-
-#md-notification .btn {
-    border: 0;
-}
-
-.dropdown-menu .divider {
-    border-color: #e5e5e5;
-    opacity: 0.4;
-}
-
-.ty-preferences .window-content {
-    background-color: #fafafa;
-}
-
-.ty-preferences .nav-group-item.active {
-    color: white;
-    background: #999;
-}
-
-.menu-item-container a.menu-style-btn {
-    background-color: #f5f8fa;
-    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
-}
-
-
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
-</style><title>自学德语这半年</title>
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<title>自学德语这半年</title>
+<link rel="stylesheet" href="github.css">
+<link rel="stylesheet" href="mine.css">
 </head>
-<body class='typora-export'><div class='typora-export-content'>
+
+<body class='typora-export typora-export-show-outline typora-export-no-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#自学德语这半年">自学德语这半年</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#为什么要自学一门外语我是否适合自学">为什么要自学一门外语？我是否适合自学？</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#使用语言和间隔记忆">使用语言和间隔记忆</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#发音">发音</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#语法">语法</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#词典资源分享">词典资源分享</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#怎么读和听用什么读和听">怎么读和听？用什么读和听？</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#读">读</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#精读marginnote-3-x-anki">精读：Marginnote 3 X Anki</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#泛读kindle-x-anki">泛读：kindle X Anki</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h3"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#听">听</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#精听marginnote-3-x-anki">精听：Marginnote 3 X Anki</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h4"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#泛听anki-x-subs2srs-x-fwquery">泛听：Anki X subs2srs X FWQuery</a></div><ul class="outline-children"></ul></li></ul></li></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#怎么说和写用什么说和写">怎么说和写？用什么说和写？</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#结语">结语</a></div><ul class="outline-children"></ul></li></ul></li></div></div>
 <div id='write'  class=''>
-    <div>
+<h1 id='自学德语这半年'><span>自学德语这半年</span></h1>
+<div class="contact">
+    <div class="contact-link">
         <a
-           href="https://karenlyu21.github.io/"><i
-               class="fas fa-user-circle"></i></a>
+            href="https://karenlyu21.github.io/"><i
+                class="fas fa-user-circle"></i></a>
         <a
-           href="https://karenlyu21.github.io/">See Karen Lyu’s personal website</a>
+            href="https://karenlyu21.github.io/">See Karen Lyu’s personal website</a>
     </div>
-    <div>
-        <a
-           href="mailto:pkulyuwenhui@gmail.com"><i
-               class="fas fa-envelope"></i></a>
-        <a
-           href="mailto:pkulyuwenhui@gmail.com">Feel free to contact me via email at pkulyuwenhui@gmail.com</a>
-    </div>
-    <h1 id='自学德语这半年'><span>自学德语这半年</span></h1><p><span>我的德语学习始于2020年7月，自学则始于2021年1月。在一年多的时间中，我只能在课业之外抽零碎的时间学习，唯独寒暑假是例外。2021年9月，我第一次参加歌德B2考试，近乎裸考，有幸高分通过。这之后，我决定不去德国读哲学，也就没有继续系统学习了。这篇文章，是对2021年1月到9月这半年语言学习经验的总结。</span></p><p><span>这半年里，我投入德语学习的时间并不算多。刚下决心自学是在去年寒假，但我探索自学方法和规划学习进度鼓捣了整整两周，只在剩下的两周假期才学了些东西。大三春季学期，我的课业依旧繁重，只能保持每天学习半小时到一小时。到了去年暑假，我报名了歌德学院的德语课程（都是为了歌德B2考位orz）。班上的同学几乎都学习了至少两年，而我的德语已经比他们所有人都好。</span></p><p><span>想标题想了半天，最后还是把豆瓣上的</span><a href='https://www.douban.com/note/756170217/?_i=3975173l47z83Y'><span>友邻阿卡西亚的日记</span></a><span>标题改改用了。在我刚开始规划德语自学时，她的日记和德语学习笔记帮到我很多。</span></p><p><span>P.S. 我的自学方法不仅适用于德语，对于其他外语的学习也是通用的，已经有朋友实践到了英语学习上。</span></p><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#自学德语这半年">自学德语这半年</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n7"><a class="md-toc-inner" href="#为什么要自学一门外语我是否适合自学">为什么要自学一门外语？我是否适合自学？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n16"><a class="md-toc-inner" href="#使用语言和间隔记忆">使用语言和间隔记忆</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n35"><a class="md-toc-inner" href="#发音">发音</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n63"><a class="md-toc-inner" href="#语法">语法</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n83"><a class="md-toc-inner" href="#词典资源分享">词典资源分享</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n117"><a class="md-toc-inner" href="#怎么读和听用什么读和听">怎么读和听？用什么读和听？</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n121"><a class="md-toc-inner" href="#读">读</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n122"><a class="md-toc-inner" href="#精读marginnote-3-x-anki">精读：Marginnote 3 X Anki</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n138"><a class="md-toc-inner" href="#泛读kindle-x-anki">泛读：kindle X Anki</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n146"><a class="md-toc-inner" href="#听">听</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n147"><a class="md-toc-inner" href="#精听marginnote-3-x-anki">精听：Marginnote 3 X Anki</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n173"><a class="md-toc-inner" href="#泛听anki-x-subs2srs-x-fwquery">泛听：Anki X subs2srs X FWQuery</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n183"><a class="md-toc-inner" href="#怎么说和写用什么说和写">怎么说和写？用什么说和写？</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n197"><a class="md-toc-inner" href="#结语">结语</a></span></p></div><h2 id='为什么要自学一门外语我是否适合自学'><span>为什么要自学一门外语？我是否适合自学？</span></h2><p><span>跟着班级进度学习一门外语无疑是更轻松方便的，既不需要自己设计教学方案，也不需要自己把控进度。然而，德语教学机构的教学法常常有所缺陷。机构老师当然比我们经验丰富，但在经验中对教学原理进行反思又是另一个层面的要求。</span></p><p><span>有的老师对</span><strong><span>人类学习和记忆的原理</span></strong><span>理解并不深入。哪怕是一些在德国接受了“德语教学法”科班教育的老师，仍然不乏有人倡导背诵课文这种事倍功半的方法。在我的经验里，只有歌德学院对大课教学的设计令人满意，不论是教材选择、课堂组织，还是技术设施的配合（包括zoom、从德国出版社买的电子教参、词汇卡片、单词搭配小游戏）。另一个例子是，有的老师德语优秀，但他们没有相应的的</span><strong><span>资源收集能力</span></strong><span>，很多人仍然惯于中德夹杂着进行百度搜索。英文互联网和德文互联网有非常丰富的语言学习资源，但这都被阻隔在墙外。</span></p><p><span>当然，不仅德语老师们很难满足上述要求，普通人也很难。如果决定好要自学一门语言，你需要做好心理准备：</span><strong><span>在初期，你需要花大量时间收集资源和设计教学法、学会用技术手段实现这些教学安排</span></strong><span>。我们需要使用很多小众开源项目。这些项目给自定义设计留出了很大空间，只有会写代码才能use them to the most。而且，这些项目往往很粗糙、开发者往往没有思虑周全，你就得不断地在电脑前trouble-shooting。我试图辅导不少朋友自学语言，最后真的完成了教学设计的只有一个CS科班出身的同学。不过也不需要被吓退。我刚开始自学德语的时候也不懂这些，探索时发现需要掌握一些编程语言，很快就现学现用了起来。不管怎样，你得是一个不反感折腾电脑的人。</span></p><p><span>除了自己设计教学的麻烦事儿以外，</span><strong><span>自学总还是孤独的，对自己的进度也很难心里有数</span></strong><span>。半年以来，我一直感到惶惶不安，担心我这么胡搞影响了德语学习的进度。直到在歌德学院上课，我才意识到自学如此卓有成效。我在歌德学院认识的朋友，也终于让我跳脱出之前的自闭生活。当然，这也有赖于歌德学院的分级考试机制，水平差太多的同学是不会被分进同一个班的；否则，被其他同学拖慢进度带来的焦虑，远远多于社交带来的快乐。当然，我们可以</span><strong><span>用各种方法来给自己“进度感”</span></strong><span>，比如制定计划和规定每日打卡目标。21年春季学期，多亏了我的打卡群，我才能坚持每天学习半小时到一小时。刚开始自学的时候，我更是直接给导师打了一个寒假的卡（比起给同学打卡或者金钱激励，还是导师的期望更能鞭策我orz）。</span></p><p><img src="img/1.1.png" referrerpolicy="no-referrer" alt="过去一年里的Anki打卡数据"></p><blockquote><p><span>过去一年里的Anki打卡数据（除了十月在突击GRE，其他时间都在打卡德语学习）。</span></p></blockquote><p><span>希望你看完这一部分的分析，能明了自己到底适合什么样的学习方式。</span></p><h2 id='使用语言和间隔记忆'><span>使用语言和间隔记忆</span></h2><p><span>在我粗浅的理解中，学习一门语言，最重要的是使用它，用它去读、听、说、写。母语者怎么用，你就怎么用。在自学过程中，首要的就是每周都读了、听了、说了、写了一些东西。</span></p><p><strong><span>背单词、背课文、记忆语法规则、学习语言学等方式，都背离了这一宗旨</span></strong><span>。背单词是把单个词汇挑出来、曲解它、把它对应上母语里的一个单词，然后简单重复两者之间的关联。背课文也是简单粗暴的记忆和发音练习，同主动口语表达完全是两回事。语法讲解则在试图把具体的句子形态归纳成普遍的结构。我们的学习当然可以借助这些方式，只是不能本末倒置。在这里贬低他们的作用，是因为我见过太多的同学把绝大部分时间花在了这些事儿上。</span></p><p><span>流水一般的外语材料输入输出已经足够把我们训练为母语者。假如我有时间在不同语境中见到同一个单词100次，我对它的理解只会比把词典释义背诵下来更好，也能更自如地在实际场景中回想起含义。只不过已经成年的我们不再有大把时间这样做，我们都是在正事儿中挤时间。另一方面，成年人比孩童更擅长抽象思维。例如，成年人可以轻松记住没有填上具体内容的句子骨架，我们也能理解语言学的研究成果、用以辅助学习记忆。总之，</span><strong><span>没有足够的时间在一种语言中游戏与生活，我们只能借助成年人的高阶能力来加快语言学习，例如背单词、记忆语法规则、学习语音学。</span></strong></p><p><span>那么，我们应该怎么样背单词、学语法呢？我感到</span><strong><span>一个关键是间隔记忆</span></strong><span>。我精读、精听过的材料，都会把单词、表达和语法点做出</span><strong><span>Anki卡片</span></strong><span>。Anki的算法会计算好间隔，在合适的时间推给我复习。</span></p><p><img src="img/2.1.png" referrerpolicy="no-referrer" alt="我做的Anki卡片"></p><blockquote><p><span>过去一年里，我已经做了2871张Anki卡片（除了十月在突击GRE，其他时间都在打卡德语学习）。</span></p></blockquote><p><span>知乎上已经有很多文章科普过Anki牛逼在哪二了（传送门：</span><a href='https://www.zhihu.com/question/28335314/answer/428970652'><span>Anki 怎么用？</span></a><span>），于我而言，最大的几个好处是</span></p><ul><li><span>很多背单词app喜欢吹艾宾浩斯记忆曲线，但论</span><strong><span>记忆算法</span></strong><span>还是都比不上Anki和supermemo。之所以记忆算法重要，是因为间隔时间只有恰到好处、不长不短时，记忆的效果才最好。当我们</span><strong><span>努力回想起来</span></strong><span>一个</span><strong><span>记忆模糊</span></strong><span>的知识点时（它在“记得”和“遗忘”的临界线上），对它的记忆才得到了强化。相较之下，不论是轻易唤起牢牢记住的知识点（它早已在“记得”一边），还是死活想不起来、然后翻词典和笔记看答案（它早已在“遗忘”一边），记忆其实是没有得到多大加深的。</span></li><li><span>Anki</span><strong><span>开源社区</span></strong><span>有很多add-ons，保证我每天都可以很快做出卡片。</span></li><li><span>Anki可以使用HTML/CSS/JS语言设计卡片布局，我会精心设计卡片、保证符合</span><strong><span>记忆习惯</span></strong><span>。比如说，一张卡片的核心并非单词，也不是释义，而是</span><strong><span>例句</span></strong><span>——背卡片的意义远远大于“在外语词汇和母语词汇之间建立记忆关联”，而是</span><strong><span>反复熟悉这一语言中的众多小语境</span></strong><span>。下图卡片的核心就是</span><em><span>the exigencies of wartime economy</span></em><span>，间隔记忆这张卡片时，我就是在反复熟悉这个小语境。</span>
-<img src="img/2.2.png" referrerpolicy="no-referrer" alt="以例句为核心的卡片"></li><li><span>把学习内容转化为Anki卡片，也更容易给自己“</span><strong><span>进度感</span></strong><span>”，这对于自学是非常重要的。我规定好每天都做20张新卡片（这也意味着我需要每天都输入一些材料），并且按时完成记忆算法给我安排的复习任务。</span></li></ul><p><span>后文涉及到具体的学习内容时，我还会展开谈Anki的用法。</span></p><h2 id='发音'><span>发音</span></h2><p><span>学习德语，首先要学的就是发音规则。尽管机构里留德回国的年轻老师发音大多都不错，但只有极少数老师懂得如何教授发音技巧。德语的发音是非常难的，</span></p><ul><li><strong><span>高密度辅音</span></strong><span>很考验口腔肌肉的灵活度，三个辅音连击的现象都不算罕见。比如，selbstverständlich这个德国人经常说的单词，就需要连发4.5个辅音lbstv（响音/l/算半个）。</span></li><li><span>德语的很多音素是</span><strong><span>中文和英语里都没有</span></strong><span>的，除了老生常谈的</span><em><span>小舌音</span></em><span>以外，还有</span><em><span>ö</span></em><span>, </span><em><span>l</span></em><span>, </span><em><span>ch</span></em><span>等等。</span></li></ul><p><span>很多老师都会说，发音不重要，别人能听懂就行。但是，</span></p><ul><li><span>一方面，发音会</span><strong><span>严重影响表达速度</span></strong><span>。很多同学学了两三年德语以后，这种影响还是非常严重。他们说德语时，每次都费力探索自己的口腔，然后绝望地选了个相近的发音部位，然后奋力卡口水。</span></li><li><span>另一方面，某些口音会</span><strong><span>严重影响可理解性</span></strong><span>。比如will这个单词。很多南欧人可能会发成wi-le，这个发音不会引起歧义，le只是把半元音l发成了辅音，发音部位都在牙后的alveolar ridge。然而，很多中国人会把will发成wir，发音部位都变了，很容易听不懂。</span></li></ul><p><span>如何学习发音规则？德语的发音对口腔肌肉有很高要求，这自然需要你</span><strong><span>多加练习</span></strong><span>。一开始没办法顺利启动特定的肌肉很正常，重要的是不要糊弄过去。一开始可以慢一点，但每次开口都要尽力说标准，这样才能起到练习的效果。</span></p><p><span>语音学的知识也大有裨益，</span></p><ul><li><span>语音学的一般知识，推荐学习</span><a href='https://www.youtube.com/playlist?list=PLlmgeS8moU5ggCOvV3x8MHZy7vY-wucdU'><span>A Guide to Pronuncation in Any Language by </span><em><span>Fluent Forever</span></em></a><span>和</span><a href='https://en.wikipedia.org/wiki/Phonetics'><span>Phonetics on Wikipedia</span></a><span>；</span></li><li><span>德语语音学，推荐学习</span><a href='https://www.youtube.com/playlist?list=PLvyVfn_eZOHoiOPk09XOTlOAdHYEzz5JW'><span>German Pronuncation by </span><em><span>Fluent Forever</span></em></a><span>。</span></li></ul><p><span>发音部位、发音方式的知识能够辅助准确发音。尤其当你要学习中文和英文里没有的音素时，例如l和ö，这些知识可以教会你应该努力调动哪块肌肉。</span></p><p><img src="img/3.1.png" referrerpolicy="no-referrer" alt="发音部位"></p><p><span>除了语音学以外，</span><strong><span>听德语歌</span></strong><span>也对发音有很大帮助。音乐的编排导致某些音节拖得很长、发得很夸张，让人清楚地听到发音过程。例如，</span><em><span>Egal, was soll&#39;s</span></em><span>在我看来就是最好的响音/l/教程（让你知道为啥/l/会响，虽然在一般理解里它是一个辅音）。我已经精听了25首歌，做了225张Anki卡片，</span></p><ul><li><a href='assets/Anki/Wortschatz Deutsch (default)__Lieder.apkg'><span>akpg文件下载</span></a></li><li><a href='https://music.apple.com/cn/playlist/lernen-deutsch-in-liedern/pl.u-2aoq8ZzHNdV75Wq'><span>Apple Music歌单</span></a></li></ul><h2 id='语法'><span>语法</span></h2><p><span>自学之前的半年里，我的两位老师打好了语法基础，感谢她们。这一阶段，我的语法学习依循的是新求精的语法教材。这一系列是中国人编写的，知识点和讲解的确很全，我的基础也有赖于此。但现在看来，它们的问题也很明显。</span></p><ul><li><p><a href='https://book.douban.com/subject/25807876/'><span>新求精初级语法教材</span></a><span>。</span></p><ul><li><span>基本上按照《新求精德语初级I》和《新求精德语初级II》两本书的章节结构安排，目录只写了第几章第几节，不方便查知识点，更适合配合教材学习。</span></li><li><span>这本教材会对语法点做很多细微的区分，现在看来并无必要。德语语言大的精神又没有把握住、需要自己去体会。 我在学习过程中完全离不开wikipedia和wiktionary，这让我可以大致体会到德语语法的精神。但很多同学并没有做到这一点，尽管他们做了很多练习。这其实是教材和教学的问题，比较可惜。</span></li></ul></li><li><p><a href='https://book.douban.com/subject/30573430/'><span>新求精中级语法教材</span></a><span>更多是作者帮忙总结的短语和用法。但这些更适合精读精听时学习。不太能增加对语言本身的理解。</span></p></li></ul><p><span>在</span><a href='#怎么读和听用什么读和听'><span>后面的部分</span></a><span>中，我推荐大家使用原版教材；但是原版教材的语法讲解还是不够的。这些讲解往往比较实用、不够系统。不过，追求“系统性”大概是哲学学生的职业病吧。按照原版教材的设想来、只现学现用实用语法点，说不定也挺好。能输入、能表达就是王道。不过，如果要读人文社科德语文献，系统的语法学习还是没法绕过。</span></p><p><span>对于语法学习，</span><a href='https://www.douban.com/note/741349110/?_i=1825260l47z83Y'><span>友邻阿卡西亚推荐了不少更好的资源</span></a><span>，</span><a href='https://www.douban.com/doulist/115546575/'><span>她自己还做了很多语法点的总结</span></a><span>，强烈推荐。我自己做的语法总结里，值得分享的有两个：</span></p><ul><li><a href='assets/others/German Strong Verbs and Irregular Verbs.docx'><span>German Strong Verbs and Irregular Verbs（单击下载）</span></a><span>：总结了变位方式特殊的动词，包括强动词和不规则动词。德语机构的老师一般把两种动词都称作不规则动词，然后要求大家死记硬背。实际上，大多数所谓的“不规则动词”的变位方式都有规律可循。</span>
-<img src="img/4.1.png" referrerpolicy="no-referrer" alt="4.1.png"></li><li><a href='assets/others/Reflexive Verben.docx'><span>反身动词（单击下载）</span></a><span>。</span></li></ul><p><span>以上两个，我都是根据wikipedia和wiktionary整理的。大家学到什么语法点、觉得这背后很可能有些general rules时，勤用这两个关键词google。语言学习中，记忆负担重的知识点很多，我们很容易三番五次死活想不起来，总是没办法成功回想，</span><a href='#使用语言和间隔记忆'><span>前面</span></a><span>提到，这种记忆是很低效的。这时候，一般性的规律可以充当</span><strong><span>“记忆的把手”</span></strong><span>，例如变位规律。借助这个把手，我们才能更容易地实现成功的回想。</span></p><h2 id='词典资源分享'><span>词典资源分享</span></h2><p><span>进入听说读写的具体训练方法之前，先分享我的词典资源，</span><a href='assets/woeterbuecher'><span>单击此处下载</span></a><span>。这些词典是我自学德语过程中最重要的工具。对语法知识有比较全面的掌握以后，这些词典就足以解决大多数知识性的问题。</span></p><p><img src="img/5.1.png" referrerpolicy="no-referrer" alt="5.2.png"></p><p><span>暑假在歌德学院上课时，同学们在课堂上提的绝大多数问题，都可以在这些词典里找到答案，其中一些问题，老师都不一定答得上来。除了我这里分享的词典资源以外，</span><a href='https://downloads.freemdict.com/尚未整理/共享2020.5.11/content/'><span>Freemdict论坛还有大量多语种mdx词典资源</span></a><span>。</span><a href='https://zhuanlan.zhihu.com/p/428739235'><span>我之前也写过文章推荐常用的英语词典</span></a><span>，。</span></p><p><span>mdx文件在移动端和电脑端都可以使用，参见</span><a href='https://www.zhihu.com/column/p/190266192'><span>如何在欧路词典中使用mdx词典</span></a><span>，Windows端推荐</span><a href='http://goldendict.org/download.php'><span>Goldendict</span></a><span>。初次配置时有些麻烦，但千万不要半途而废。在我这篇文章的所有资源中，没有比这些mdx文件更重要的了。哪怕学不会用Anki，也必须得学会用mdx。</span></p><p><span>其中，我主要使用的是以下几个：</span></p><ul><li><p><span>Langenscheidt Deutsch als Fremdsprache (DaF): 德德词典，是我B1–C1阶段主要使用的词典。</span></p><ul><li><span>在德语里，一个单词的释义往往很多，有的时候几个义项的差别还很大；查词典时往往需要读好久释义，才能确认这个单词在刚刚读到的语境里是什么意思。这本词典按照用法（下图红色字体）对释义（下图蓝绿色非斜体）分门别类，</span><strong><span>把用法搭配视为构成单词释义的一部分</span></strong><span>，方便查询、也方便对不同义项进行区分。</span>
-<img src="img/5.2_Langenscheidt DaF.png" referrerpolicy="no-referrer" alt="Langenscheidt DaF">
-<span>（忽略这个丑陋的排版。实在太好用了，所以勉强忍忍。等我有时间了重排一下。)</span></li><li><span>专门为外语学习者设计，可读性强。不像Duden，总是用我不认识的词解释我的不认识的词。</span></li></ul></li><li><p><span>Duden – Das große Wörterbuch der deutschen Sprache：</span></p><ul><li><span>全面权威，辅助Langenscheidt DaF使用。</span></li><li><span>但这本词典是给母语者使用的，总是用我不认识的词解释我的不认识的词。大大拉低学习效率，也容易让人产生挫败感。身边很多同学学到B2了还没开始用德德词典，感觉原因就是他们只知道Duden这一本德德词典的存在。</span></li></ul></li><li><p><span>Langenscheidt Collins e-Großwörterbuch Englisch (Deutsch-Englisch)：德英词典，犯懒不想读德德词典时使用。搭配非常全。</span></p></li></ul><p><span>我没有用过德汉词典，不太能做推荐；我只在初学德语、还没装好Langenscheidt Collins Deu-Eng时短暂用过德语助手——它的德汉词典实在是太糟糕了。不论是从语言相近度臆测、还是从英语学界的德语教学质量臆测，德英词典的质量都远高于德汉词典。推荐大家入门时都用德英词典，学到B1以后转到德德词典，B2及以后尽量只使用德德词典。</span></p><p><span>除了这些文件以外，我还会使用几个软件或在线数据库：</span></p><ul><li><a href='https://www.linguee.com'><span>linguee</span></a><span>: 知道英语里某个说法的准确表达，用它查德语。（查到以后一定要再回到上面几个词典，看看这个德语单词是不是真的表达了自己的意思。）</span></li><li><a href='https://www.deepl.com'><span>deepl</span></a><span>: 知道中文里某个说法的准确表达，用它查德语。（查到以后一定要再回到上面几个词典，看看这个德语单词是不是真的表达了自己的意思。）</span></li><li><a href='https://www.dwds.de'><span>DWDS语料库</span></a><span>，可以规定时间范围、查询报刊和书籍等材料里的德语语料。写作的时候多动动手，对于某个表达或搭配，看看德国人是不是真的会这么说，还是自己杜撰出来的。</span></li></ul><p><span>暑假在歌德学院上课时，老师说他觉得“damit, dass”比较奇怪、德国人应该不会这样说。我在DWDS查过以后发现，这个说法确实出现次数不多，尤其是1950年以后（这个意思一般用的是“dadurch, dass”），但也不能算不对。</span>
-<img src="img/5.3.png" referrerpolicy="no-referrer" alt="“damit, dass” in DWDS">
-<img src="img/5.4.png" referrerpolicy="no-referrer" alt="“damit, dass” in DWDS"></p><p><span>顺带分享一下</span><a href='assets/notes/damit.pdf'><span>我整理的“damit”的意思和用法（单击下载）</span></a><span>，我当时的全部references都包括在了这一部分分享的资源以内。暑假上课时，这个问题我们拉扯了好久，其实词典上都写得一清二楚。</span></p><h2 id='怎么读和听用什么读和听'><span>怎么读和听？用什么读和听？</span></h2><p><span>B2及以前的阶段，课本仍然是主要的输入材料。选教材时可以参考</span><a href='https://www.douban.com/note/756170217/?_i=3975173l47z83Y'><span>友邻阿卡西亚的推荐</span></a><span>和</span><a href='https://www.douban.com/doulist/148061314/'><span>我的德语教材豆列</span></a><span>。</span></p><p><span>我需要结合使用教材和Anki，制作Anki卡片对电子版教材的质量要求很高。选择教材时，我的首要考虑是出版社是否提供了电子教材。所以我并没有用过太多课本。基本的感受是原版教材都还不错。</span></p><p><span>我从B2开始使用的是Aspekte系列。虽然libgen可以下载到，但还是推荐</span><a href='https://www.klett-sprachen.de/aspekte-neu-b2/t-1/9783126050241'><span>在klett-sprachen官网购买电子教材</span></a><span>，</span><a href='https://www.klett-sprachen.de/aspekte-neu/r-1/15#reiter=mediathek&amp;dl_niveau_str=B2'><span>klett-sprachen官网还可以下载到相当多的资源，如听力材料的Transcript</span></a><span>。</span></p><h3 id='读'><span>读</span></h3><h4 id='精读marginnote-3-x-anki'><span>精读：Marginnote 3 X Anki</span></h4><p><span>我精读教材遵循一个固定程式：</span></p><ol start='' ><li><span>首先通读全文，每句话最多读两遍，标注不明白的地方。</span></li><li><span>再次浏览一遍，主要关注每个段落的开头结尾，理解文章的结构和逻辑。</span></li><li><span>用Marginnote 3勾画不明白的句子，查询并记录生词和没有见过的表达（使用之前提到的词典资源）。效果如下（为了方便其他语种学习者阅读，下文我都使用英文材料为例）</span>
-<img src="img/6.1.png" referrerpolicy="no-referrer" alt="用Marginnote 3精读课文"></li><li><span>从Marginnote 3的笔记导出Anki卡片。导出方法见</span><a href='https://www.bilibili.com/video/BV1qf4y1a7Ej/'><span>我做的教学视频</span></a><span>。以6.1中的两个脑图节点为例，做成Anki卡片的效果如下：</span>
-<img src="img/6.2.png" referrerpolicy="no-referrer" alt="an example for normal cards">
-<img src="img/6.3.png" referrerpolicy="no-referrer" alt="6.3"></li><li><span>把卡片加入Anki，按照Anki的记忆算法进行间隔复习</span></li></ol><p><mark><span>to-be-added: 词源学 as comment/hint</span></mark></p><p><mark><span>to-be-added: marginnote2Anki教学视频</span></mark><span>（only supported on Mac / iPad）</span></p><p><span>这样精读下来，不仅能够提高理解单个句子的能力、理解篇章结构的能力，还能不断熟悉一个个小语境（做成Anki卡片的那些小语境），以上图为例，</span><em><span>Sie fügt nachdenklich an</span></em><span>）。</span></p><h4 id='泛读kindle-x-anki'><span>泛读：kindle X Anki</span></h4><p><span>B2及以上，</span><strong><span>泛读</span></strong><span>必不可少。推荐使用kindle生词本快速制作anki卡片。泛读时积累的表达加入间隔记忆的队列中，也让自己有统一的指标来衡量自己的进度。</span></p><p><span>kindle生词本功能把【你记录的生词】【该词所在的语境】和【这是在哪本书】存储在</span><code>/[Kindle Volumn]/system/vocabulary/vocab.db</code><span>路径里。</span><a href='https://Ankiweb.net/shared/info/443244854'><span>我写了一个Anki插件</span></a><span>，可以把这个文件转换为Anki卡片组。不过我的插件还比较粗糙，建议使用</span><a href='https://fluentcards.com'><span>fluentcards</span></a><span>网站先把</span><code>vocab.db</code><span>导出为csv文件，再导入anki。导入的anki卡片的一个例子如下，</span></p><p><img src="/Users/lenovo/Documents/Share/自学德语这半年/6.4.png" referrerpolicy="no-referrer" alt="kindle生词本"></p><p><span>然后我们可以用</span><a href='https://Ankiweb.net/shared/info/1807206748'><span>插件FWQuery</span></a><span>把mdx词典中的释义导出到卡片里，这样就不需要自己一个个查词典了（不然怎么叫泛读）。最终效果如下</span></p><p><img src="img/6.5.png" referrerpolicy="no-referrer" alt="泛读"></p><p><a href='https://zhuanlan.zhihu.com/p/385142599'><span>单击这里查看知乎网友写的anki &amp; kindle &amp; FWQuery具体教程</span></a><span>，不过他的方法和我上面提到的不完全一样，哪个好上手就选哪个吧。</span></p><p><span>用这种方式学德语存在一个问题：kindle上的德语词典资源太少了，不方便看书时随手查看生词含义。有空的话我会把我经常用的几个mdx词典转换成kindle可以用的mobi格式（草，我给自己挖了多少坑了），有一定编程基础的朋友也可以自己试试，如果有人找到相应资源，也可以</span><a href="mailto:pkulyuwenhui@gmail.com"><span>给我发邮件</span></a><span>分享。不过，学英语是不存在kindle词典资源短缺的问题的，大家可以在</span><a href='https://forum.freemdict.com/t/topic/6150'><span>这里</span></a><span>下载英语kindle词典。</span></p><h3 id='听'><span>听</span></h3><h4 id='精听marginnote-3-x-anki'><span>精听：Marginnote 3 X Anki</span></h4><p><strong><span>精听</span></strong><span>的程式大体与精读相似：</span></p><ol start='' ><li><p><span>多次播放，直到听懂：</span></p><ul><li><span>不间断地播放一遍听力材料，没听懂的先不管，尽量跟上大致的意思。听完一遍后，回想一下这篇材料的结构。</span></li><li><span>播放第二次，跟不上时可以暂停、回想一下。</span></li><li><span>播放第三次，如果还有听不懂的句子，可以倒带回放。听完三遍后，再次回想这篇材料的结构。</span></li></ul></li><li><p><span>精读听力原文，表达导入Anki：</span></p><ul><li><span>在Marginnote 3中打开Transcript，查询并记录生词和没有见过的表达（使用之前提到的词典资源）。（同精读第3步）</span></li><li><span>从Marginnote 3的笔记导出Anki卡片。导出方法见</span><a href='https://www.bilibili.com/video/BV1qf4y1a7Ej/'><span>我做的教学视频</span></a><span>。（同精读第4步）</span></li><li><span>把卡片加入Anki，按照Anki的记忆算法进行间隔复习。（同精读第5步）</span></li></ul></li><li><p><span>回顾熟悉听力材料：不间断地播放一遍听力材料。如果还有听不懂的地方，可以回顾一下Transcript，并重新播放一次。如此循环，直到完全听懂。</span></p></li><li><p><span>复述训练口语：再次播放听力材料，每播放两三句暂停下来，用自己的话或者听力原句复述这两三句话的大概意思，如果感觉有困难，倒带回放这两三句话，重新尝试复述，直到成功复述。</span></p></li></ol><p><span>与精读类似，这样精听可以提高理解单个句子和篇章结构的能力。与此同时，刚刚听到的东西，在复述时转化成了</span><strong><span>主动表达库</span></strong><span>，是对口语的训练。自学期间，我很少有人和我对话，我的口语训练主要靠的是复述。我们不需要复述阅读材料，就“主动表达”而言，听力材料里的语料更为紧要。</span></p><h4 id='泛听anki-x-subs2srs-x-fwquery'><span>泛听：Anki X subs2srs X FWQuery</span></h4><p><span>搭配Anki、</span><a href='https://Ankiweb.net/shared/info/1213145732'><span>截取视频信息的插件subs2srs</span></a><span>、</span><a href='https://Ankiweb.net/shared/info/1807206748'><span>提取mdx词典释义的插件FWQuery</span></a><span>做卡片，可以很方便地截取字幕、视频截图和音频。这种方法尤其</span><strong><span>适合泛听</span></strong><span>，看视频时顺手就把卡片做出来了。</span></p><p><span>推荐把Youtube视频作为学习资源，5–15分钟小视频适合作为daily routine，而且视频文件和字幕文件都很容易下载下来（推荐使用</span><a href='https://github.com/ytdl-org/youtube-dl'><span>youtube-dl</span></a><span>）。</span></p><p><span>不过，为了配合以上学习工具，要注意选有高质量字幕的视频：字幕始末要精准，一行字幕是一个完整的分句，最好有标点符号。</span></p><p><span>德语学习可以用德国之声DW德语学习系列视频，如</span><a href='https://www.youtube.com/playlist?list=PL5113EDF7E1116D32'><span>Das Video-Thema</span></a><span>。英语学习推荐</span><a href='https://www.youtube.com/playlist?list=PLOGi5-fAu8bHF0k5WPpXXTKjKOCnILt_5'><span>TED</span></a><span>和</span><a href='https://www.youtube.com/playlist?list=PLwSl4pifg_WwWHOScXD-HG-VVEesSPDDU'><span>National Geographic 101</span></a><span>。</span></p><p><a href='https://Ankiweb.net/shared/info/1213145732'><span>subs2srs</span></a><span>的设置如左，从视频中导出到卡片的效果如右。</span></p><p><img src="img/7.1.png" referrerpolicy="no-referrer" alt="用视频做Anki卡片"></p><p><span>再用上FWQuery，最终效果如下。</span></p><p><img src="img/7.2.png" referrerpolicy="no-referrer" alt="泛听"></p><p><mark><span>to-be-added</span></mark><span>: 上图中的卡片制作视频。</span></p><h2 id='怎么说和写用什么说和写'><span>怎么说和写？用什么说和写？</span></h2><p><span>口语一向是中国学生的老大难，网上一直流传各种提高英语口语的“秘笈”，比如背课文、复读听力材料。在我眼中这些方法都吃力不讨好。背诵和复读，与其说是表达训练，不如说是发音训练。在这一过程中，我们并未尝试主动说出自己想表达的东西。</span></p><p><span>口语训练的关键，是足够量的主动表达，尤其是“自由表达”Freisprechen。</span></p><ul><li><a href='#精听marginnote-3-x-anki'><span>上一部分</span></a><span>提到了复述听力材料，在这一过程中，我们用上自己的话或听力材料里已有的表达，还原听力材料的意思，不要求、甚至应该避免背诵原句。</span></li><li><span>另外，我每周还会在</span><a href='https://www.italki.com'><span>italki</span></a><span>上找德国姐姐闲侃45分钟。德国姐姐并未提供系统的教学。与其说她是老师，不如说是语伴。</span></li></ul><p><span>除了自由表达以外，我唯一的刻意训练就是</span><strong><span>口语课后复盘</span></strong><span>。在我表达的过程中，德国姐姐会及时纠正我的错误表达和奇怪说法，发在skype聊天框里。课后，我就把这些内容整理成</span><strong><span>挖空卡片</span></strong><span>或</span><strong><span>翻译卡片</span></strong><span>。</span></p><p><span>复习挖空卡片时，我需要根据语境回想出挖空处的单词——</span><strong><span>这种过程与主动表达接近</span></strong><span>。如果做成普通卡片，下图所示的卡片例句里conjugation的意思我是可以想起来的，但当我自己需要使用被挖掉的单词时、需要用英语表达“变位”这个意思时，我很可能无法顺利想到它。</span></p><p><img src="img/8.1.png" referrerpolicy="no-referrer" alt="speaking (cloze)"></p><p><span>翻译句子时，我也需要回想应该用什么表达，这也是在排演主动表达。</span></p><p><img src="img/8.2.png" referrerpolicy="no-referrer" alt="speaking (translation)"></p><p><span>训练写作时，我会花很多时间查词典和语料库，确保德语里确实有自己用的这些表达。写完后，我会把作文发给德语老师或者italki上的德国人修改。最后，我会</span><strong><span>复盘自己查到的新表达和他们的修改意见</span></strong><span>，做成挖空卡片和翻译卡片，与口语卡片类似。</span></p><h2 id='结语'><span>结语</span></h2><p><span>本文里提到的所有类型的Anki卡片可以</span><a href='assets/Templates.apkg'><span>在这里打包下载</span></a><span>。把这个apkg文件导入anki以后，你们可以直接在我的模版里填充自己的内容。在每个field里填充内容时，尽量和我对这个field的安排保持一致，否则排版可能会乱。如果想重新排版，需要有HTML/CSS的基础知识。</span></p><p><span>去年一月探索生产力方法两周以后，我才找到了自学的节奏。在日复一日的稳定学习中，我逐渐获得了对语言学习的掌控感，开始能从中获得乐趣。学会一门新的语言，就像打开一个新的世界。</span><em><span>从前不可言说的东西，在一种新的言谈方式中获得了生命</span></em><span>。我已经不再打算去德国留学，本科毕业后大概也没有机会继续做德国哲学了，但我仍然在继续学德语，并且会一直坚持下去。尽管我一开始为德语学习掉了不少头发，但是现在想来，过去一年中带给我最大快乐和成就感的东西，德语学习绝对有一席之地。希望这篇文章也能帮你体会到这种快乐和成就感。</span></p>
-<div>
-    <a
-       href="https://karenlyu21.github.io/"><i
-           class="fas fa-user-circle"></i></a>
-    <a
-       href="https://karenlyu21.github.io/">See Karen Lyu’s personal website</a>
 </div>
-<div>
+<div class="contact">
+    <div class="contact-link">
     <a
        href="mailto:pkulyuwenhui@gmail.com"><i
            class="fas fa-envelope"></i></a>
     <a
        href="mailto:pkulyuwenhui@gmail.com">Feel free to contact me via email at pkulyuwenhui@gmail.com</a>
+    </div>
+    <p>For better reading experience, open this page on a PC or an iPad.</p>
+</div>
+<p><span>我的德语学习始于2020年7月，自学则始于2021年1月。在一年多的时间中，我只能在课业之外抽零碎的时间学习，唯独寒暑假是例外。2021年9月，我第一次参加歌德B2考试，近乎裸考，有幸高分通过。这之后，我决定不去德国读哲学，也就没有继续系统学习了。这篇文章，是对2021年1月到9月这半年语言学习经验的总结。</span></p>
+<p><span>这半年里，我投入德语学习的时间并不算多。刚下决心自学是在去年寒假，但我探索自学方法和规划学习进度鼓捣了整整两周，只在剩下的两周假期才学了些东西。大三春季学期，我的课业依旧繁重，只能保持每天学习半小时到一小时。到了去年暑假，我报名了歌德学院的德语课程（都是为了歌德B2考位orz）。班上的同学几乎都学习了至少两年，而我的德语已经比他们所有人都好。</span></p>
+<p><span>想标题想了半天，最后还是把豆瓣上的</span><a href='https://www.douban.com/note/756170217/?_i=3975173l47z83Y'><span>友邻阿卡西亚的日记</span></a><span>标题改改用了。在我刚开始规划德语自学时，她的日记和德语学习笔记帮到我很多。</span></p>
+<p><span>P.S. 我的自学方法不仅适用于德语，对于其他外语的学习也是通用的，已经有朋友实践到了英语学习上。</span></p>
+
+<h2 id='为什么要自学一门外语我是否适合自学'><span>为什么要自学一门外语？我是否适合自学？</span></h2>
+<p><span>跟着班级进度学习一门外语无疑是更轻松方便的，既不需要自己设计教学方案，也不需要自己把控进度。然而，德语教学机构的教学法常常有所缺陷。机构老师当然比我们经验丰富，但在经验中对教学原理进行反思又是另一个层面的要求。</span></p>
+<p><span>有的老师对</span><strong><span>人类学习和记忆的原理</span></strong><span>理解并不深入。哪怕是一些在德国接受了“德语教学法”科班教育的老师，仍然不乏有人倡导背诵课文这种事倍功半的方法。在我的经验里，只有歌德学院对大课教学的设计令人满意，不论是教材选择、课堂组织，还是技术设施的配合（包括zoom、从德国出版社买的电子教参、词汇卡片、单词搭配小游戏）。另一个例子是，有的老师德语优秀，但他们没有相应的的</span><strong><span>资源收集能力</span></strong><span>，很多人仍然惯于中德夹杂着进行百度搜索。英文互联网和德文互联网有非常丰富的语言学习资源，但这都被阻隔在墙外。</span></p>
+<p><span>当然，不仅德语老师们很难满足上述要求，普通人也很难。如果决定好要自学一门语言，你需要做好心理准备：</span><strong><span>在初期，你需要花大量时间收集资源和设计教学法、学会用技术手段实现这些教学安排</span></strong><span>。我们需要使用很多小众开源项目。这些项目给自定义设计留出了很大空间，只有会写代码才能use them to the most。而且，这些项目往往很粗糙、开发者往往没有思虑周全，你就得不断地在电脑前trouble-shooting。我试图辅导不少朋友自学语言，最后真的完成了教学设计的只有一个CS科班出身的同学。不过也不需要被吓退。我刚开始自学德语的时候也不懂这些，探索时发现需要掌握一些编程语言，很快就现学现用了起来。不管怎样，你得是一个不反感折腾电脑的人。</span></p>
+<p><span>除了自己设计教学的麻烦事儿以外，</span><strong><span>自学总还是孤独的，对自己的进度也很难心里有数</span></strong><span>。半年以来，我一直感到惶惶不安，担心我这么胡搞影响了德语学习的进度。直到在歌德学院上课，我才意识到自学如此卓有成效。我在歌德学院认识的朋友，也终于让我跳脱出之前的自闭生活。当然，这也有赖于歌德学院的分级考试机制，水平差太多的同学是不会被分进同一个班的；否则，被其他同学拖慢进度带来的焦虑，远远多于社交带来的快乐。当然，我们可以</span><strong><span>用各种方法来给自己“进度感”</span></strong><span>，比如制定计划和规定每日打卡目标。21年春季学期，多亏了我的打卡群，我才能坚持每天学习半小时到一小时。刚开始自学的时候，我更是直接给导师打了一个寒假的卡（比起给同学打卡或者金钱激励，还是导师的期望更能鞭策我orz）。</span></p>
+<p><img class="m-pic" src="img/1.1.png" referrerpolicy="no-referrer" alt="过去一年里的Anki打卡数据"></p><blockquote>
+<p><span>过去一年里的Anki打卡数据（除了十月在突击GRE，其他时间都在打卡德语学习）。</span></p></blockquote>
+<p><span>希望你看完这一部分的分析，能明了自己到底适合什么样的学习方式。</span></p>
+<h2 id='使用语言和间隔记忆'><span>使用语言和间隔记忆</span></h2>
+<p><span>在我粗浅的理解中，学习一门语言，最重要的是使用它，用它去读、听、说、写。母语者怎么用，你就怎么用。在自学过程中，首要的就是每周都读了、听了、说了、写了一些东西。</span></p>
+<p><strong><span>背单词、背课文、记忆语法规则、学习语言学等方式，都背离了这一宗旨</span></strong><span>。背单词是把单个词汇挑出来、曲解它、把它对应上母语里的一个单词，然后简单重复两者之间的关联。背课文也是简单粗暴的记忆和发音练习，同主动口语表达完全是两回事。语法讲解则在试图把具体的句子形态归纳成普遍的结构。我们的学习当然可以借助这些方式，只是不能本末倒置。在这里贬低他们的作用，是因为我见过太多的同学把绝大部分时间花在了这些事儿上。</span></p>
+<p><span>流水一般的外语材料输入输出已经足够把我们训练为母语者。假如我有时间在不同语境中见到同一个单词100次，我对它的理解只会比把词典释义背诵下来更好，也能更自如地在实际场景中回想起含义。只不过已经成年的我们不再有大把时间这样做，我们都是在正事儿中挤时间。另一方面，成年人比孩童更擅长抽象思维。例如，成年人可以轻松记住没有填上具体内容的句子骨架，我们也能理解语言学的研究成果、用以辅助学习记忆。总之，</span><strong><span>没有足够的时间在一种语言中游戏与生活，我们只能借助成年人的高阶能力来加快语言学习，例如背单词、记忆语法规则、学习语音学。</span></strong></p>
+<p><span>那么，我们应该怎么样背单词、学语法呢？我感到</span><strong><span>一个关键是间隔记忆</span></strong><span>。我精读、精听过的材料，都会把单词、表达和语法点做出</span><strong><span>Anki卡片</span></strong><span>。Anki的算法会计算好间隔，在合适的时间推给我复习。</span></p>
+<p><img class="m-pic" src="img/2.1.png" referrerpolicy="no-referrer" alt="我做的Anki卡片"></p><blockquote>
+<p><span>过去一年里，我已经做了2871张Anki卡片（除了十月在突击GRE，其他时间都在打卡德语学习）。</span></p></blockquote>
+<p><span>知乎上已经有很多文章科普过Anki牛逼在哪二了（传送门：</span><a href='https://www.zhihu.com/question/28335314/answer/428970652'><span>Anki 怎么用？</span></a><span>），于我而言，最大的几个好处是</span></p><ul><li><span>很多背单词app喜欢吹艾宾浩斯记忆曲线，但论</span><strong><span>记忆算法</span></strong><span>还是都比不上Anki和supermemo。之所以记忆算法重要，是因为间隔时间只有恰到好处、不长不短时，记忆的效果才最好。当我们</span><strong><span>努力回想起来</span></strong><span>一个</span><strong><span>记忆模糊</span></strong><span>的知识点时（它在“记得”和“遗忘”的临界线上），对它的记忆才得到了强化。相较之下，不论是轻易唤起牢牢记住的知识点（它早已在“记得”一边），还是死活想不起来、然后翻词典和笔记看答案（它早已在“遗忘”一边），记忆其实是没有得到多大加深的。</span></li><li><span>Anki</span><strong><span>开源社区</span></strong><span>有很多add-ons，保证我每天都可以很快做出卡片。</span></li><li><span>Anki可以使用HTML/CSS/JS语言设计卡片布局，我会精心设计卡片、保证符合</span><strong><span>记忆习惯</span></strong><span>。比如说，一张卡片的核心并非单词，也不是释义，而是</span><strong><span>例句</span></strong><span>——背卡片的意义远远大于“在外语词汇和母语词汇之间建立记忆关联”，而是</span><strong><span>反复熟悉这一语言中的众多小语境</span></strong><span>。下图卡片的核心就是</span><em><span>the exigencies of wartime economy</span></em><span>，间隔记忆这张卡片时，我就是在反复熟悉这个小语境。</span>
+<img class="l-pic" src="img/2.2.png" referrerpolicy="no-referrer" alt="以例句为核心的卡片"></li><li><span>把学习内容转化为Anki卡片，也更容易给自己“</span><strong><span>进度感</span></strong><span>”，这对于自学是非常重要的。我规定好每天都做20张新卡片（这也意味着我需要每天都输入一些材料），并且按时完成记忆算法给我安排的复习任务。</span></li></ul>
+<p><span>后文涉及到具体的学习内容时，我还会展开谈Anki的用法。</span></p>
+<h2 id='发音'><span>发音</span></h2>
+<p><span>学习德语，首先要学的就是发音规则。尽管机构里留德回国的年轻老师发音大多都不错，但只有极少数老师懂得如何教授发音技巧。德语的发音是非常难的，</span></p><ul><li><strong><span>高密度辅音</span></strong><span>很考验口腔肌肉的灵活度，三个辅音连击的现象都不算罕见。比如，selbstverständlich这个德国人经常说的单词，就需要连发4.5个辅音lbstv（响音/l/算半个）。</span></li><li><span>德语的很多音素是</span><strong><span>中文和英语里都没有</span></strong><span>的，除了老生常谈的</span><em><span>小舌音</span></em><span>以外，还有</span><em><span>ö</span></em><span>, </span><em><span>l</span></em><span>, </span><em><span>ch</span></em><span>等等。</span></li></ul>
+<p><span>很多老师都会说，发音不重要，别人能听懂就行。但是，</span></p><ul><li><span>一方面，发音会</span><strong><span>严重影响表达速度</span></strong><span>。很多同学学了两三年德语以后，这种影响还是非常严重。他们说德语时，每次都费力探索自己的口腔，然后绝望地选了个相近的发音部位，然后奋力卡口水。</span></li><li><span>另一方面，某些口音会</span><strong><span>严重影响可理解性</span></strong><span>。比如will这个单词。很多南欧人可能会发成wi-le，这个发音不会引起歧义，le只是把半元音l发成了辅音，发音部位都在牙后的alveolar ridge。然而，很多中国人会把will发成wir，发音部位都变了，很容易听不懂。</span></li></ul>
+<p><span>如何学习发音规则？德语的发音对口腔肌肉有很高要求，这自然需要你</span><strong><span>多加练习</span></strong><span>。一开始没办法顺利启动特定的肌肉很正常，重要的是不要糊弄过去。一开始可以慢一点，但每次开口都要尽力说标准，这样才能起到练习的效果。</span></p>
+<p><span>语音学的知识也大有裨益，</span></p><ul><li><span>语音学的一般知识，推荐学习</span><a href='https://www.youtube.com/playlist?list=PLlmgeS8moU5ggCOvV3x8MHZy7vY-wucdU'><span>A Guide to Pronuncation in Any Language by </span><em><span>Fluent Forever</span></em></a><span>和</span><a href='https://en.wikipedia.org/wiki/Phonetics'><span>Phonetics on Wikipedia</span></a><span>；</span></li><li><span>德语语音学，推荐学习</span><a href='https://www.youtube.com/playlist?list=PLvyVfn_eZOHoiOPk09XOTlOAdHYEzz5JW'><span>German Pronuncation by </span><em><span>Fluent Forever</span></em></a><span>。</span></li></ul>
+<p><span>发音部位、发音方式的知识能够辅助准确发音。尤其当你要学习中文和英文里没有的音素时，例如l和ö，这些知识可以教会你应该努力调动哪块肌肉。</span></p>
+<p><img class="s-pic" src="img/3.1.png" referrerpolicy="no-referrer" alt="发音部位"></p>
+<p><span>除了语音学以外，</span><strong><span>听德语歌</span></strong><span>也对发音有很大帮助。音乐的编排导致某些音节拖得很长、发得很夸张，让人清楚地听到发音过程。例如，</span><em><span>Egal, was soll&#39;s</span></em><span>在我看来就是最好的响音/l/教程（让你知道为啥/l/会响，虽然在一般理解里它是一个辅音）。我已经精听了25首歌，做了225张Anki卡片，</span></p><ul><li><a href='assets/Anki/Wortschatz Deutsch (default)__Lieder.apkg'><span>akpg文件下载</span></a></li><li><a href='https://music.apple.com/cn/playlist/lernen-deutsch-in-liedern/pl.u-2aoq8ZzHNdV75Wq'><span>Apple Music歌单</span></a></li></ul>
+<h2 id='语法'><span>语法</span></h2>
+<p><span>自学之前的半年里，我的两位老师打好了语法基础，感谢她们。这一阶段，我的语法学习依循的是新求精的语法教材。这一系列是中国人编写的，知识点和讲解的确很全，我的基础也有赖于此。但现在看来，它们的问题也很明显。</span></p>
+<ul>
+    <li><p><a href='https://book.douban.com/subject/25807876/'><span>新求精初级语法教材</span></a><span>。</span></p><ul><li><span>基本上按照《新求精德语初级I》和《新求精德语初级II》两本书的章节结构安排，目录只写了第几章第几节，不方便查知识点，更适合配合教材学习。</span></li><li><span>这本教材会对语法点做很多细微的区分，现在看来并无必要。德语语言大的精神又没有把握住、需要自己去体会。 我在学习过程中完全离不开wikipedia和wiktionary，这让我可以大致体会到德语语法的精神。但很多同学并没有做到这一点，尽管他们做了很多练习。这其实是教材和教学的问题，比较可惜。</span></li></ul></li>
+    <li><p><a href='https://book.douban.com/subject/30573430/'><span>新求精中级语法教材</span></a><span>更多是作者帮忙总结的短语和用法。但这些更适合精读精听时学习。不太能增加对语言本身的理解。</span></p></li>
+</ul>
+<p><span>在</span><a href='#怎么读和听用什么读和听'><span>后面的部分</span></a><span>中，我推荐大家使用原版教材；但是原版教材的语法讲解还是不够的。这些讲解往往比较实用、不够系统。不过，追求“系统性”大概是哲学学生的职业病吧。按照原版教材的设想来、只现学现用实用语法点，说不定也挺好。能输入、能表达就是王道。不过，如果要读人文社科德语文献，系统的语法学习还是没法绕过。</span></p>
+<p><span>对于语法学习，</span><a href='https://www.douban.com/note/741349110/?_i=1825260l47z83Y'><span>友邻阿卡西亚推荐了不少更好的资源</span></a><span>，</span><a href='https://www.douban.com/doulist/115546575/'><span>她自己还做了很多语法点的总结</span></a><span>，强烈推荐。我自己做的语法总结里，值得分享的有两个：</span></p><ul><li><a href='assets/others/German Strong Verbs and Irregular Verbs.docx'><span>German Strong Verbs and Irregular Verbs（单击下载）</span></a><span>：总结了变位方式特殊的动词，包括强动词和不规则动词。德语机构的老师一般把两种动词都称作不规则动词，然后要求大家死记硬背。实际上，大多数所谓的“不规则动词”的变位方式都有规律可循。</span>
+<img class="l-pic" src="img/4.1.png" referrerpolicy="no-referrer" alt="语法整理"></li><li><a href='assets/others/Reflexive Verben.docx'><span>反身动词（单击下载）</span></a><span>。</span></li></ul>
+<p><span>以上两个，我都是根据wikipedia和wiktionary整理的。大家学到什么语法点、觉得这背后很可能有些general rules时，勤用这两个关键词google。语言学习中，记忆负担重的知识点很多，我们很容易三番五次死活想不起来，总是没办法成功回想，</span><a href='#使用语言和间隔记忆'><span>前面</span></a><span>提到，这种记忆是很低效的。这时候，一般性的规律可以充当</span><strong><span>“记忆的把手”</span></strong><span>，例如变位规律。借助这个把手，我们才能更容易地实现成功的回想。</span></p>
+<h2 id='词典资源分享'><span>词典资源分享</span></h2>
+<p><span>进入听说读写的具体训练方法之前，先分享我的词典资源，</span><a href='assets/woeterbuecher'><span>单击此处下载</span></a><span>。这些词典是我自学德语过程中最重要的工具。对语法知识有比较全面的掌握以后，这些词典就足以解决大多数知识性的问题。</span></p>
+<p><img class="m-pic" src="img/5.1.png" referrerpolicy="no-referrer" alt="词典文件夹"></p>
+<p><span>暑假在歌德学院上课时，同学们在课堂上提的绝大多数问题，都可以在这些词典里找到答案，其中一些问题，老师都不一定答得上来。除了我这里分享的词典资源以外，</span><a href='https://downloads.freemdict.com/尚未整理/共享2020.5.11/content/'><span>Freemdict论坛还有大量多语种mdx词典资源</span></a><span>。</span><a href=''><span>我之前也写过文章推荐常用的英语词典</span></a><span>，。</span></p>
+<p><span>mdx文件在移动端和电脑端都可以使用，参见</span><a href='https://www.zhihu.com/column/p/190266192'><span>如何在欧路词典中使用mdx词典</span></a><span>，Windows端推荐</span><a href='http://goldendict.org/download.php'><span>Goldendict</span></a><span>。初次配置时有些麻烦，但千万不要半途而废。在我这篇文章的所有资源中，没有比这些mdx文件更重要的了。哪怕学不会用Anki，也必须得学会用mdx。</span></p>
+<p><span>其中，我主要使用的是以下几个：</span></p>
+<ul>
+    <li><p><span>Langenscheidt Deutsch als Fremdsprache (DaF): 德德词典，是我B1–C1阶段主要使用的词典。</span></p><ul><li><span>在德语里，一个单词的释义往往很多，有的时候几个义项的差别还很大；查词典时往往需要读好久释义，才能确认这个单词在刚刚读到的语境里是什么意思。这本词典按照用法（下图红色字体）对释义（下图蓝绿色非斜体）分门别类，</span><strong><span>把用法搭配视为构成单词释义的一部分</span></strong><span>，方便查询、也方便对不同义项进行区分。</span><img class="m-pic" src="img/5.2_Langenscheidt DaF.png" referrerpolicy="no-referrer" alt="Langenscheidt DaF"><span>（忽略这个丑陋的排版。实在太好用了，所以勉强忍忍。等我有时间了重排一下。)</span></li><li><span>专门为外语学习者设计，可读性强。不像Duden，总是用我不认识的词解释我的不认识的词。</span></li></ul></li>
+    <li><p><span>Duden – Das große Wörterbuch der deutschen Sprache：</span></p><ul><li><span>全面权威，辅助Langenscheidt DaF使用。</span></li><li><span>但这本词典是给母语者使用的，总是用我不认识的词解释我的不认识的词。大大拉低学习效率，也容易让人产生挫败感。身边很多同学学到B2了还没开始用德德词典，感觉原因就是他们只知道Duden这一本德德词典的存在。</span></li></ul></li>
+    <li><p><span>Langenscheidt Collins e-Großwörterbuch Englisch (Deutsch-Englisch)：德英词典，犯懒不想读德德词典时使用。搭配非常全。</span></p></li>
+</ul>
+<p><span>我没有用过德汉词典，不太能做推荐；我只在初学德语、还没装好Langenscheidt Collins Deu-Eng时短暂用过德语助手——它的德汉词典实在是太糟糕了。不论是从语言相近度臆测、还是从英语学界的德语教学质量臆测，德英词典的质量都远高于德汉词典。推荐大家入门时都用德英词典，学到B1以后转到德德词典，B2及以后尽量只使用德德词典。</span></p>
+<p><span>除了这些文件以外，我还会使用几个软件或在线数据库：</span></p><ul><li><a href='https://www.linguee.com'><span>linguee</span></a><span>: 知道英语里某个说法的准确表达，用它查德语。（查到以后一定要再回到上面几个词典，看看这个德语单词是不是真的表达了自己的意思。）</span></li><li><a href='https://www.deepl.com'><span>deepl</span></a><span>: 知道中文里某个说法的准确表达，用它查德语。（查到以后一定要再回到上面几个词典，看看这个德语单词是不是真的表达了自己的意思。）</span></li><li><a href='https://www.dwds.de'><span>DWDS语料库</span></a><span>，可以规定时间范围、查询报刊和书籍等材料里的德语语料。写作的时候多动动手，对于某个表达或搭配，看看德国人是不是真的会这么说，还是自己杜撰出来的。</span></li></ul>
+<p><span>暑假在歌德学院上课时，老师说他觉得“damit, dass”比较奇怪、德国人应该不会这样说。我在DWDS查过以后发现，这个说法确实出现次数不多，尤其是1950年以后（这个意思一般用的是“dadurch, dass”），但也不能算不对。</span>
+<img class="m-pic" src="img/5.3.png" referrerpolicy="no-referrer" alt="“damit, dass” in DWDS">
+<img class="m-pic" src="img/5.4.png" referrerpolicy="no-referrer" alt="“damit, dass” in DWDS"></p>
+<p><span>顺带分享一下</span><a href='assets/others/damit.pdf'><span>我整理的“damit”的意思和用法（单击下载）</span></a><span>，我当时的全部references都包括在了这一部分分享的资源以内。暑假上课时，这个问题我们拉扯了好久，其实词典上都写得一清二楚。</span></p>
+<h2 id='怎么读和听用什么读和听'><span>怎么读和听？用什么读和听？</span></h2>
+<p><span>B2及以前的阶段，课本仍然是主要的输入材料。选教材时可以参考</span><a href='https://www.douban.com/note/756170217/?_i=3975173l47z83Y'><span>友邻阿卡西亚的推荐</span></a><span>和</span><a href='https://www.douban.com/doulist/148061314/'><span>我的德语教材豆列</span></a><span>。</span></p>
+<p><span>我需要结合使用教材和Anki，制作Anki卡片对电子版教材的质量要求很高。选择教材时，我的首要考虑是出版社是否提供了电子教材。所以我并没有用过太多课本。基本的感受是原版教材都还不错。</span></p>
+<p><span>我从B2开始使用的是Aspekte系列。虽然libgen可以下载到，但还是推荐</span><a href='https://www.klett-sprachen.de/aspekte-neu-b2/t-1/9783126050241'><span>在klett-sprachen官网购买电子教材</span></a><span>，</span><a href='https://www.klett-sprachen.de/aspekte-neu/r-1/15#reiter=mediathek&amp;dl_niveau_str=B2'><span>klett-sprachen官网还可以下载到相当多的资源，如听力材料的Transcript</span></a><span>。</span></p>
+<h3 id='读'><span>读</span></h3>
+<h4 id='精读marginnote-3-x-anki'><span>精读：Marginnote 3 X Anki</span></h4>
+<p><span>我精读教材遵循一个固定程式：</span></p><ol start='' ><li><span>首先通读全文，每句话最多读两遍，标注不明白的地方。</span></li><li><span>再次浏览一遍，主要关注每个段落的开头结尾，理解文章的结构和逻辑。</span></li><li><span>用Marginnote 3勾画不明白的句子，查询并记录生词和没有见过的表达（使用之前提到的词典资源）。效果如下（为了方便其他语种学习者阅读，下文我都使用英文材料为例）</span>
+<img class="l-pic" src="img/6.1.png" referrerpolicy="no-referrer" alt="用Marginnote 3精读课文"></li><li><span>从Marginnote 3的笔记导出Anki卡片。导出方法见</span><a href='https://www.bilibili.com/video/BV1qf4y1a7Ej/'><span>我做的教学视频</span></a><span>。以6.1中的两个脑图节点为例，做成Anki卡片的效果如下：</span>
+<img class="l-pic" src="img/6.2.png" referrerpolicy="no-referrer" alt="an example for normal cards">
+<img class="l-pic" src="img/6.3.png" referrerpolicy="no-referrer" alt="an example for clozed cards"></li><li><span>把卡片加入Anki，按照Anki的记忆算法进行间隔复习</span></li></ol>
+<p><mark><span>to-be-added: 词源学 as comment/hint</span></mark></p>
+<p><mark><span>to-be-added: marginnote2Anki教学视频</span></mark><span>（only supported on Mac / iPad）</span></p>
+<p><span>这样精读下来，不仅能够提高理解单个句子的能力、理解篇章结构的能力，还能不断熟悉一个个小语境（做成Anki卡片的那些小语境），以上图为例，</span><em><span>Sie fügt nachdenklich an</span></em><span>）。</span></p>
+<h4 id='泛读kindle-x-anki'><span>泛读：kindle X Anki</span></h4>
+<p><span>B2及以上，</span><strong><span>泛读</span></strong><span>必不可少。推荐使用kindle生词本快速制作anki卡片。泛读时积累的表达加入间隔记忆的队列中，也让自己有统一的指标来衡量自己的进度。</span></p>
+<p><span>kindle生词本功能把【你记录的生词】【该词所在的语境】和【这是在哪本书】存储在</span><code>/[Kindle Volumn]/system/vocabulary/vocab.db</code><span>路径里。</span><a href='https://Ankiweb.net/shared/info/443244854'><span>我写了一个Anki插件</span></a><span>，可以把这个文件转换为Anki卡片组。不过我的插件还比较粗糙，建议使用</span><a href='https://fluentcards.com'><span>fluentcards</span></a><span>网站先把</span><code>vocab.db</code><span>导出为csv文件，再导入anki。导入的anki卡片的一个例子如下，</span></p>
+<p><img class="s-pic" src="img/6.4.png" referrerpolicy="no-referrer" alt="kindle生词本"></p>
+<p><span>然后我们可以用</span><a href='https://Ankiweb.net/shared/info/1807206748'><span>插件FWQuery</span></a><span>把mdx词典中的释义导出到卡片里，这样就不需要自己一个个查词典了（不然怎么叫泛读）。最终效果如下</span></p>
+<p><img class="l-pic" src="img/6.5.png" referrerpolicy="no-referrer" alt="泛读"></p>
+<p><a href='https://zhuanlan.zhihu.com/p/385142599'><span>单击这里查看知乎网友写的anki &amp; kindle &amp; FWQuery具体教程</span></a><span>，不过他的方法和我上面提到的不完全一样，哪个好上手就选哪个吧。</span></p>
+<p><span>用这种方式学德语存在一个问题：kindle上的德语词典资源太少了，不方便看书时随手查看生词含义。有空的话我会把我经常用的几个mdx词典转换成kindle可以用的mobi格式（草，我给自己挖了多少坑了），有一定编程基础的朋友也可以自己试试，如果有人找到相应资源，也可以</span><a href="mailto:pkulyuwenhui@gmail.com"><span>给我发邮件</span></a><span>分享。不过，学英语是不存在kindle词典资源短缺的问题的，大家可以在</span><a href='https://forum.freemdict.com/t/topic/6150'><span>这里</span></a><span>下载英语kindle词典。</span></p>
+<h3 id='听'><span>听</span></h3>
+<h4 id='精听marginnote-3-x-anki'><span>精听：Marginnote 3 X Anki</span></h4>
+<p><strong><span>精听</span></strong><span>的程式大体与精读相似：</span></p><ol start='' >
+    <li><p><span>多次播放，直到听懂：</span></p><ul><li><span>不间断地播放一遍听力材料，没听懂的先不管，尽量跟上大致的意思。听完一遍后，回想一下这篇材料的结构。</span></li><li><span>播放第二次，跟不上时可以暂停、回想一下。</span></li><li><span>播放第三次，如果还有听不懂的句子，可以倒带回放。听完三遍后，再次回想这篇材料的结构。</span></li></ul></li>
+    <li><p><span>精读听力原文，表达导入Anki：</span></p><ul><li><span>在Marginnote 3中打开Transcript，查询并记录生词和没有见过的表达（使用之前提到的词典资源）。（同精读第3步）</span></li><li><span>从Marginnote 3的笔记导出Anki卡片。导出方法见</span><a href='https://www.bilibili.com/video/BV1qf4y1a7Ej/'><span>我做的教学视频</span></a><span>。（同精读第4步）</span></li><li><span>把卡片加入Anki，按照Anki的记忆算法进行间隔复习。（同精读第5步）</span></li></ul></li>
+    <li><p><span>回顾熟悉听力材料：不间断地播放一遍听力材料。如果还有听不懂的地方，可以回顾一下Transcript，并重新播放一次。如此循环，直到完全听懂。</span></p></li>
+    <li><p><span>复述训练口语：再次播放听力材料，每播放两三句暂停下来，用自己的话或者听力原句复述这两三句话的大概意思，如果感觉有困难，倒带回放这两三句话，重新尝试复述，直到成功复述。</span></p></li></ol>
+<p><span>与精读类似，这样精听可以提高理解单个句子和篇章结构的能力。与此同时，刚刚听到的东西，在复述时转化成了</span><strong><span>主动表达库</span></strong><span>，是对口语的训练。自学期间，我很少有人和我对话，我的口语训练主要靠的是复述。我们不需要复述阅读材料，就“主动表达”而言，听力材料里的语料更为紧要。</span></p>
+<h4 id='泛听anki-x-subs2srs-x-fwquery'><span>泛听：Anki X subs2srs X FWQuery</span></h4>
+<p><span>搭配Anki、</span><a href='https://Ankiweb.net/shared/info/1213145732'><span>截取视频信息的插件subs2srs</span></a><span>、</span><a href='https://Ankiweb.net/shared/info/1807206748'><span>提取mdx词典释义的插件FWQuery</span></a><span>做卡片，可以很方便地截取字幕、视频截图和音频。这种方法尤其</span><strong><span>适合泛听</span></strong><span>，看视频时顺手就把卡片做出来了。</span></p>
+<p><span>推荐把Youtube视频作为学习资源，5–15分钟小视频适合作为daily routine，而且视频文件和字幕文件都很容易下载下来（推荐使用</span><a href='https://github.com/ytdl-org/youtube-dl'><span>youtube-dl</span></a><span>）。</span></p>
+<p><span>不过，为了配合以上学习工具，要注意选有高质量字幕的视频：字幕始末要精准，一行字幕是一个完整的分句，最好有标点符号。</span></p>
+<p><span>德语学习可以用德国之声DW德语学习系列视频，如</span><a href='https://www.youtube.com/playlist?list=PL5113EDF7E1116D32'><span>Das Video-Thema</span></a><span>。英语学习推荐</span><a href='https://www.youtube.com/playlist?list=PLOGi5-fAu8bHF0k5WPpXXTKjKOCnILt_5'><span>TED</span></a><span>和</span><a href='https://www.youtube.com/playlist?list=PLwSl4pifg_WwWHOScXD-HG-VVEesSPDDU'><span>National Geographic 101</span></a><span>。</span></p>
+<p><a href='https://Ankiweb.net/shared/info/1213145732'><span>subs2srs</span></a><span>的设置如左，从视频中导出到卡片的效果如右。</span></p>
+<p><img class="l-pic" src="img/7.1.png" referrerpolicy="no-referrer" alt="用视频做Anki卡片"></p>
+<p><span>再用上FWQuery，最终效果如下。</span></p>
+<p><img class="l-pic" src="img/7.2.png" referrerpolicy="no-referrer" alt="泛听"></p>
+<p><mark><span>to-be-added</span></mark><span>: 上图中的卡片制作视频。</span></p>
+<h2 id='怎么说和写用什么说和写'><span>怎么说和写？用什么说和写？</span></h2>
+<p><span>口语一向是中国学生的老大难，网上一直流传各种提高英语口语的“秘笈”，比如背课文、复读听力材料。在我眼中这些方法都吃力不讨好。背诵和复读，与其说是表达训练，不如说是发音训练。在这一过程中，我们并未尝试主动说出自己想表达的东西。</span></p>
+<p><span>口语训练的关键，是足够量的主动表达，尤其是“自由表达”Freisprechen。</span></p><ul><li><a href='#精听marginnote-3-x-anki'><span>上一部分</span></a><span>提到了复述听力材料，在这一过程中，我们用上自己的话或听力材料里已有的表达，还原听力材料的意思，不要求、甚至应该避免背诵原句。</span></li><li><span>另外，我每周还会在</span><a href='https://www.italki.com'><span>italki</span></a><span>上找德国姐姐闲侃45分钟。德国姐姐并未提供系统的教学。与其说她是老师，不如说是语伴。</span></li></ul>
+<p><span>除了自由表达以外，我唯一的刻意训练就是</span><strong><span>口语课后复盘</span></strong><span>。在我表达的过程中，德国姐姐会及时纠正我的错误表达和奇怪说法，发在skype聊天框里。课后，我就把这些内容整理成</span><strong><span>挖空卡片</span></strong><span>或</span><strong><span>翻译卡片</span></strong><span>。</span></p>
+<p><span>复习挖空卡片时，我需要根据语境回想出挖空处的单词——</span><strong><span>这种过程与主动表达接近</span></strong><span>。如果做成普通卡片，下图所示的卡片例句里conjugation的意思我是可以想起来的，但当我自己需要使用被挖掉的单词时、需要用英语表达“变位”这个意思时，我很可能无法顺利想到它。</span></p>
+<p><img class="l-pic" src="img/8.1.png" referrerpolicy="no-referrer" alt="speaking (cloze)"></p>
+<p><span>翻译句子时，我也需要回想应该用什么表达，这也是在排演主动表达。</span></p>
+<p><img class="l-pic" src="img/8.2.png" referrerpolicy="no-referrer" alt="speaking (translation)"></p>
+<p><span>训练写作时，我会花很多时间查词典和语料库，确保德语里确实有自己用的这些表达。写完后，我会把作文发给德语老师或者italki上的德国人修改。最后，我会</span><strong><span>复盘自己查到的新表达和他们的修改意见</span></strong><span>，做成挖空卡片和翻译卡片，与口语卡片类似。</span></p>
+<h2 id='结语'><span>结语</span></h2>
+<p><span>本文里提到的所有类型的Anki卡片可以</span><a href='assets/Templates.apkg'><span>在这里打包下载</span></a><span>。把这个apkg文件导入anki以后，你们可以直接在我的模版里填充自己的内容。在每个field里填充内容时，尽量和我对这个field的安排保持一致，否则排版可能会乱。如果想重新排版，需要有HTML/CSS的基础知识。</span></p>
+<p><span>去年一月探索生产力方法两周以后，我才找到了自学的节奏。在日复一日的稳定学习中，我逐渐获得了对语言学习的掌控感，开始能从中获得乐趣。学会一门新的语言，就像打开一个新的世界。</span><em><span>从前不可言说的东西，在一种新的言谈方式中获得了生命</span></em><span>。我已经不再打算去德国留学，本科毕业后大概也没有机会继续做德国哲学了，但我仍然在继续学德语，并且会一直坚持下去。尽管我一开始为德语学习掉了不少头发，但是现在想来，过去一年中带给我最大快乐和成就感的东西，德语学习绝对有一席之地。希望这篇文章也能帮你体会到这种快乐和成就感。</span></p>
+<p>&nbsp;</p>
+<div class="contact">
+    <div class="contact-link">
+        <a
+            href="https://karenlyu21.github.io/"><i
+                class="fas fa-user-circle"></i></a>
+        <a
+            href="https://karenlyu21.github.io/">See Karen Lyu’s personal website</a>
+    </div>
+</div>
+<div class="contact">
+    <div class="contact-link">
+    <a
+       href="mailto:pkulyuwenhui@gmail.com"><i
+           class="fas fa-envelope"></i></a>
+    <a
+       href="mailto:pkulyuwenhui@gmail.com">Feel free to contact me via email at pkulyuwenhui@gmail.com</a>
+    </div>
 </div>
 </div></div>
-</body>
+
+<script>(function (){var t=document.body.parentElement,e=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(t,e,n){document.addEventListener(t,function(t){if(!t.defaultPrevented)for(var i=t.target;i&&i!=this;i=i.parentNode)if(i.matches(e)){!1===n.call(i,t)&&(t.preventDefault(),t.stopPropagation());break}},!1)};function o(){return t.scrollTop}r("click",".outline-expander",function(t){var e=this.closest(".outline-item-wrapper").classList;return e.contains("outline-item-open")?e.remove("outline-item-open"):e.add("outline-item-open"),c(),!1}),r("click",".outline-item",function(t){var e=this.querySelector(".outline-label");if(location.hash="#"+e.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),l(),n.add("outline-item-active")}});var a,s,u=function(){var t=o();n=null;for(var i=0;i<e.length&&e[i][1]-t<60;i++)n=e[i]},l=function(){document.querySelectorAll(".outline-item-active").forEach(t=>t.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(t=>t.classList.remove("outline-item-open"))},c=function(){if(n){l();var t=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(t)if(i){var e=t.closest(".outline-item-open>ul>.outline-item-wrapper");if(e)e.classList.add("outline-item-active");else{for(var r=(t=t.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(t=r).parentElement.closest(".outline-item-wrapper");t.classList.add("outline-item-active")}}else t.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(t){a&&clearTimeout(a),a=setTimeout(function(){u(),c()},300)});var f=function(){s=setTimeout(function(){!function(){e=[];var t=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");e.push([i,t+n.getBoundingClientRect().y])})}(),u(),c()},300)};window.addEventListener("resize",function(t){s&&clearTimeout(s),f()}),f()})();</script></body>
 </html>

@@ -170,7 +170,7 @@ B2及以上，**泛读**必不可少。推荐使用kindle生词本快速制作an
 
 kindle生词本功能把【你记录的生词】【该词所在的语境】和【这是在哪本书】存储在`/[Kindle Volumn]/system/vocabulary/vocab.db`路径里。[我写了一个Anki插件](https://Ankiweb.net/shared/info/443244854)，可以把这个文件转换为Anki卡片组。不过我的插件还比较粗糙，建议使用[fluentcards](https://fluentcards.com)网站先把`vocab.db`导出为csv文件，再导入anki。导入的anki卡片的一个例子如下，
 
-![kindle生词本](/Users/lenovo/Documents/Share/自学德语这半年/6.4.png)
+![kindle生词本](img/6.4.png)
 
 然后我们可以用[插件FWQuery](https://Ankiweb.net/shared/info/1807206748)把mdx词典中的释义导出到卡片里，这样就不需要自己一个个查词典了（不然怎么叫泛读）。最终效果如下
 

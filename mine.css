@@ -1,0 +1,48 @@
+.s-pic, .m-pic, .l-pic {
+    display: block;
+    margin: auto;
+}
+
+.s-pic, .m-pic {
+    width: 90%;
+}
+
+.l-pic {
+    max-width: 800px;
+}
+
+.s-pic {
+    max-width: 400px;
+}
+
+.m-pic {
+    max-width: 600px;
+}
+
+.contact {
+    text-align: right;
+    line-height: 1.1;
+}
+
+.contact .contact-link {
+    margin-bottom: 0.3em;
+    padding: 0;
+}
+
+.contact p {
+    margin: 0.3em 0 0.3em 0;
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+
+.contact a:hover {
+    border-bottom: 1px dotted;
+}
+
+.contact p {
+    font-style: italic;
+}
